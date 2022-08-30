@@ -3,6 +3,7 @@ import 'core-js/actual';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import ItemListConteiner from './components/ItemListContainer';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
 
       <Header />
+        <ItemListConteiner greeting="aca iria una listita"/>
 
       <Footer />
 
