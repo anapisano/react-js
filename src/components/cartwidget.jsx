@@ -1,13 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-const Cartwidget= () => {
+const CartWidget= () => {
     return (
-        <div>
-            <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
+        <div className="col-1 d-flex align-items-center justify-content-center ">
+            <i className="bi bi-cart" ></i>
         </div>
     )
 }
 
-export default Cartwidget;
+export default CartWidget;
