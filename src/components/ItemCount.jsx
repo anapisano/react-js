@@ -33,9 +33,9 @@ const ItemCount = ({stock, initial, onAdd}) => {
                     <div className="input-group">
                         <input className="btn btn-secondary" type="button" value="-" onClick={() =>
                         {quitarItems(itemInitial - 1)}} />
-                        <input className="form-control" type="text" value={itemInitial} />
+                        <input className="form-control" type="text" value={itemInitial} onChange={()=>{}} />
                         <input className="btn btn-secondary" type="button" value="+" onClick={() =>
-                        {agregarItems(itemStock + 1)}} />
+                        {agregarItems(itemInitial + 1)}} />
                         
                     </div>
                     <div className="d-grid pt-3 gap-2">
