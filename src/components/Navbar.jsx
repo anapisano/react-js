@@ -2,7 +2,7 @@ import React from "react";
 import CartWidget from "./CartWidget";
 import logo from "../img/logo.jpeg";
 
-const Navbar = () =>{
+const Navbar = () => {
   return(
     <div className="container-fluid">
         <div className="row justify-content-evenly">
