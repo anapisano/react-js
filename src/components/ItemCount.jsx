@@ -27,19 +27,18 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     return (
         <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-2">
-                    <p className="text-start">Casita de tela</p>
+            <div className="row d-flex align-items-center justify-content-center">
+                <div className="col-12 ">
                     <div className="input-group">
                         <input className="btn btn-secondary" type="button" value="-" onClick={() =>
-                        {quitarItems(itemInitial - 1)}} />
+                        {quitarItems(itemInitial - 1)}}  />
                         <input className="form-control" type="text" value={itemInitial} onChange={()=>{}} />
                         <input className="btn btn-secondary" type="button" value="+" onClick={() =>
                         {agregarItems(itemInitial + 1)}} />
                         
                     </div>
                     <div className="d-grid pt-3 gap-2">
-                        <input className="btn btn-light" type="button" value="agregar" onClick={() =>
+                        <input className="btn btn-secondary" type="button" value="agregar" onClick={() =>
                         {agregarProducto()}}/>
                     </div>
                     <p>Productos seleccionados: {itemAdd}</p>
