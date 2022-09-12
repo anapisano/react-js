@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCount from "./ItemCount";
+
 
 
 const Item = ({ info }) => {
@@ -11,14 +11,11 @@ const Item = ({ info }) => {
         <div className="card">
           <div className="card-body p-2">
             <img src={src} className="img-fluid p-1 rounded-2" width=""/>
-            <div className="d-flex justify-content-between p-2">
-              <h5 className="card-title">{nombre}</h5>
-              <p className="card-text">${precio}</p>
+            <h5 className="text-center p-2 fw-bold">{nombre}</h5>
+            <div className="d-grid col-11 mx-auto">
+              <button className="btn btn-dark" type="button">Ver detalle</button>
             </div>
-            
-            <div >        
-            <ItemCount stock={info.stock} initial={1} onAdd={0}/>
-            </div>
+
           </div>
         </div>
       </div>

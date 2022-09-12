@@ -28,7 +28,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     return (
         <div className="container-fluid">
             <div className="row d-flex align-items-center justify-content-center">
-                <div className="col-12 ">
+                <div className="col-10 ">
                     <div className="input-group">
                         <input className="btn btn-secondary" type="button" value="-" onClick={() =>
                         {quitarItems(itemInitial - 1)}}  />
@@ -41,7 +41,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
                         <input className="btn btn-secondary" type="button" value="agregar" onClick={() =>
                         {agregarProducto()}}/>
                     </div>
-                    <p>Productos seleccionados: {itemAdd}</p>
+                    <h5 className="p-2">Productos seleccionados: {itemAdd}</h5>
                 </div>
             </div>
         </div>
