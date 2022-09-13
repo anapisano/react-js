@@ -5,7 +5,7 @@ import yt from "./img/youtube.png";
 
 const Footer = () => {
     return (
-            <footer className="container-fluid">
+            <footer className="container-fluid fondo">
                 <div className="d-flex align-items-center">
                     
                     <p className="col-6 color_letra justify-content-center h6">Copyright © Cría Suelta Todos los derechos reservados</p>

@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemDetail from "./ItemDetail";
-import  { productos } from "./productos"
+import  { productos } from "./arrayProductos"
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState ({})

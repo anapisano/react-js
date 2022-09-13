@@ -13,7 +13,9 @@ const Item = ({ info }) => {
             <img src={src} className="img-fluid p-1 rounded-2" width=""/>
             <h5 className="text-center p-2 fw-bold">{nombre}</h5>
             <div className="d-grid col-11 mx-auto">
-              <button className="btn btn-dark" type="button">Ver detalle</button>
+              <button className="btn btn-dark" type="button">
+                <a className="nav-link color_letra" href='/productos/:id'>Ver detalle</a>
+              </button>
             </div>
 
           </div>
