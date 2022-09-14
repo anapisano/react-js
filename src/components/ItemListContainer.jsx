@@ -7,7 +7,8 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = ({texto}) => {
     const [data, setData] = useState([]);
 
-    const {categoriaId} = useParams();
+    const {categoria} = useParams();
+    console.log(categoria)
 
     useEffect(() =>{
         const getProductos = new Promise ((resolve) => {
@@ -15,15 +16,16 @@ const ItemListContainer = ({texto}) => {
                 resolve (productos);
             }, 1000);
         });
-        if (categoriaId) {
-            getProductos.then (res => setData(res.filter (producto => producto.categoria === categoriaId)));
-            console.log (productos)
-        }else{
+        if (categoria === "todos") {
             getProductos.then (res => setData(res));
+            
+        }else{
+            getProductos.then (res => setData(res.filter (producto => producto.categoria === categoria)));
+            
         }
         
 
-    }, [categoriaId])
+    }, [categoria])
 
     return (
         <div className="container-fluid row px-5 mb-5">

@@ -1,7 +1,7 @@
 import React from "react";
-import ig from "./img/instagram.png";
-import fc from "./img/facebook.png";
-import yt from "./img/youtube.png";
+import ig from "img/instagram.png";
+import fc from "img/facebook.png";
+import yt from "img/youtube.png";
 
 const Footer = () => {
     return (
