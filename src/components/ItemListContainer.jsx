@@ -4,7 +4,7 @@ import {productos} from "./arrayProductos"
 import { useParams } from "react-router-dom";
 
 
-const ItemListContainer = ({texto}) => {
+const ItemListContainer = () => {
     const [data, setData] = useState([]);
 
     const {categoria} = useParams();

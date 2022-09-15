@@ -3,23 +3,21 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ItemDetail from "./ItemDetail";
 import  { productos } from "./arrayProductos"
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState ({})
+    const {id} = useParams()
+    
 
-    useEffect(() => {
-        const getProducto = () => 
-            new Promise ((resolve) => {
-                const item = productos.find ((prod) => prod.id === 3);
-                setTimeout (() => {
-                    resolve (item);
-                }, 1000);
-            });
-        getProducto ()
-        .then ((info) =>{
-            setProducto (info)
+     useEffect(() => {
+        const getProducto = new Promise ((resolve) => {              
+            setTimeout (() => {
+                resolve (productos);
+            }, 1000);
         });
-
+            getProducto.then (res => setProducto(res.find (prod => prod.id == parseInt(id))));
+            
     }, [])
 
     return(
@@ -31,3 +29,4 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer;
+
