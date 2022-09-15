@@ -1,7 +1,5 @@
 import React from "react";
-import ig from "img/instagram.png";
-import fc from "img/facebook.png";
-import yt from "img/youtube.png";
+
 
 const Footer = () => {
     return (
@@ -12,9 +10,9 @@ const Footer = () => {
 
                     <div className="col-6 d-flex justify-content-end">
                         <ul className="d-flex p-2">
-                            <li><img className="m-2" src={ig} width="40" alt="instagram" /></li>
-                            <li><img className="m-2" src={fc} width="40" alt="facebook" /></li>
-                            <li><img className="m-2" src={yt} width="40" alt="youtube" /></li>
+                            <li><img className="m-2" src="/img/instagram.png" width="40" alt="instagram" /></li>
+                            <li><img className="m-2" src="/img/facebook.png" width="40" alt="facebook" /></li>
+                            <li><img className="m-2" src="/img/youtube.png" width="40" alt="youtube" /></li>
                         </ul>
 
                     </div>

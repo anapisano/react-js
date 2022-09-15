@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import logo from "../public/img/logo.jpeg";
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="row justify-content-evenly">
             <ul className="nav col-10 d-flex align-items-center">
                 <li className="nav-item p-2">
-                    <a className="nav-link active" aria-current="page" href="/"><img src={logo} width="100" alt="cria" /></a>
+                    <a className="nav-link active" aria-current="page" href="/"><img src="/img/logo.jpeg" width="100" alt="cria" /></a>
                 </li>
                 <div className="dropdown">
                     <button className="btn btn-secondary dropdown-toggle color_fondo" type="button" data-bs-toggle="dropdown" aria-expanded="false">
