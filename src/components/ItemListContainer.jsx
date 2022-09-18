@@ -8,7 +8,6 @@ const ItemListContainer = () => {
     const [data, setData] = useState([]);
 
     const {categoria} = useParams();
-    console.log(categoria)
 
     useEffect(() =>{
         const getProductos = new Promise ((resolve) => {
@@ -24,7 +23,6 @@ const ItemListContainer = () => {
             
         }
         
-
     }, [categoria])
 
     return (

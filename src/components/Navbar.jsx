@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return(
     <div className="container-fluid fondo">
-        <div className="row justify-content-evenly">
+        <div className="d-flex flex-row ">
             <ul className="nav col-10 d-flex align-items-center">
                 <li className="nav-item p-2">
                     <a className="nav-link active" aria-current="page" href="/"><img src="/img/logo.jpeg" width="100" alt="cria" /></a>
@@ -31,8 +31,13 @@ const Navbar = () => {
                 <li className="nav-item p-2">
                     <NavLink className="nav__link color_letra" to="/productos">Contacto</NavLink>
                 </li>
+                <li>
+                    
+                </li>
             </ul>
-            <CartWidget />          
+            <div className="col-1 d-flex align-items-center justify-content-center "><NavLink className="nav__link color_letra"to={'/cart'}><CartWidget /> </NavLink></div>
+            
+                     
         </div>
 
         <hr className="m-0"></hr>

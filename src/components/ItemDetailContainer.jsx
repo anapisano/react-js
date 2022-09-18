@@ -16,9 +16,9 @@ const ItemDetailContainer = () => {
                 resolve (productos);
             }, 1000);
         });
-            getProducto.then (res => setProducto(res.find (prod => prod.id == parseInt(id))));
+            getProducto.then (res => setProducto(res.find (prod => prod.id === parseInt(id))));
             
-    }, [])
+    }, [id])
 
     return(
         <div className="container-fluid row justify-content-center">
