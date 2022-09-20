@@ -1,17 +1,21 @@
-import React,{ useState }  from "react";
-import { Link } from "react-router-dom";
+import React,{ useState, useContext }  from "react";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 import swal from 'sweetalert';
+import { CartContext } from "../context/CartContext";
 
 
 const ItemDetail = ({item}) => {
+    const {addItem} = useContext(CartContext)
+   
     const [goToCart, setGoToCart] = useState (false)
 
     const onAdd = (cantidad) => {
         setGoToCart (true)
+        addItem (item, cantidad)
     };
 
-    const alert = () =>{
+    /* const alert = () =>{
         swal({
             text: `Sus productos han sido agregados con éxito`,
             icon: 'success',
@@ -20,7 +24,7 @@ const ItemDetail = ({item}) => {
         }).then(function() {
             window.location.href = "http://localhost:3000/cart";
         });
-    }
+    } */
     
     return (
         <div className="col-4 text-center">
@@ -30,7 +34,7 @@ const ItemDetail = ({item}) => {
             <h4 className="card-text">${item.precio}</h4>
             {
                 goToCart
-                    ? alert()
+                    ? <Link to={"/cart"}>Ir al Carrito</Link>
                     : <ItemCount initial={1} stock={15} onAdd={onAdd} />
             }
         

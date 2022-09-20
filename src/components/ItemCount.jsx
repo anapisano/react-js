@@ -2,42 +2,19 @@ import React from "react";
 import { useState } from "react";
 
 const ItemCount = ({stock, initial, onAdd}) => {
-    const [itemInitial, setItemInitial] = useState (initial);
+    const [itemCount, setItemCount] = useState (initial);
 
     const quitarItems = () => {
-        if(itemInitial > 0) {
-            setItemInitial (itemInitial - 1)
+        if(itemCount > 0) {
+            setItemCount (itemCount - 1)
             }
     }
 
     const agregarItems = () => {
-        if(itemInitial < stock) {
-        setItemInitial (itemInitial + 1)
+        if(itemCount < stock) {
+        setItemCount (itemCount + 1)
         }
     }
-
-/*     const [itemStock, setItemStock] = useState (stock);
-    const [itemInitial, setItemInitial] = useState (initial);
-    const [itemAdd, setItemAdd] = useState (onAdd);
-
-    const quitarItems = (valor) => {
-        if (valor > 0) {
-            setItemInitial(valor);
-        }
-    }
-    
-    const agregarItems = (valor) => {
-        if (valor <= itemStock) {
-            setItemInitial(valor);
-        }
-    }
-
-    const agregarProducto = () =>{
-        if (itemInitial <= itemStock) {
-            setItemStock (itemStock - itemInitial);
-            setItemAdd (itemAdd + itemInitial)
-        }
-    } */
 
     return (
         <div className="container-fluid">
@@ -45,13 +22,13 @@ const ItemCount = ({stock, initial, onAdd}) => {
                 <div className="col-10 ">
                     <div className="input-group">
                         <input className="btn btn-secondary" type="button" value="-" onClick={quitarItems}  />
-                        <input className="form-control" type="text" value={itemInitial} onChange={()=>{}} />
+                        <input className="form-control" type="text" value={itemCount} onChange={()=>{}} />
                         <input className="btn btn-secondary" type="button" value="+" onClick={agregarItems} />
                         
                     </div>
                     <div className="d-grid pt-3 gap-2">
                         <input className="btn btn-secondary" type="button" value="agregar" onClick={() =>
-                        onAdd(itemInitial)}/>
+                        onAdd(itemCount)}/>
                     </div>
                 </div>
             </div>
