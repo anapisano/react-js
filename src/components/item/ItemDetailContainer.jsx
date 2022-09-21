@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemDetail from "./ItemDetail";
-import  { productos } from "./arrayProductos"
+import  { productos } from "../arrayProductos"
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {

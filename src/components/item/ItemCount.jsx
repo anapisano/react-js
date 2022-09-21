@@ -19,7 +19,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     return (
         <div className="container-fluid">
             <div className="row d-flex align-items-center justify-content-center">
-                <div className="col-10 ">
+                <div className="col-8 ">
                     <div className="input-group">
                         <input className="btn btn-secondary" type="button" value="-" onClick={quitarItems}  />
                         <input className="form-control" type="text" value={itemCount} onChange={()=>{}} />

@@ -1,6 +1,5 @@
 import React from "react";
-import CartWidget from "./CartWidget";
-
+import CartWidget from "../CartWidget";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,20 +10,16 @@ const Navbar = () => {
                 <li className="nav-item p-2">
                     <a className="nav-link active" aria-current="page" href="/"><img src="/img/logo.jpeg" width="100" alt="cria" /></a>
                 </li>
-                <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle color_fondo" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="dropdown fondo">
+                    <button className="btn btn-secondary dropdown-toggle fondo" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Productos
                     </button>
                     <ul className="dropdown-menu">
-                        <li><NavLink className="nav__link dropdown-item color_letra" to="/productos/todos">Ver todos los productos</NavLink></li>
+                        <li><NavLink className="nav__link dropdown-item color_letra " to="/productos/todos">Ver todos los productos</NavLink></li>
                         <li><NavLink className="nav__link dropdown-item color_letra" to="/productos/tela">Productos de tela</NavLink></li>
                         <li><NavLink className="nav__link dropdown-item color_letra" to="/productos/madera">Productos de madera</NavLink></li>
                     </ul>
                 </div>
-                <li className="nav-item p-2">
-                </li>
-                <li className="nav-item p-2">
-                </li>
                 <li className="nav-item p-2">
                 <NavLink className="nav__link color_letra" to="/productos">Nosotros</NavLink>
                 </li>

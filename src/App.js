@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import Navbar from './components/globales/Navbar';
+import Footer from './components/globales/Footer';
+import ItemListContainer from './components/item/ItemListContainer';
+import ItemDetailContainer from './components/item/ItemDetailContainer';
 import Carrousel from './components/Carrousel';
 import CartProvider from './context/CartContext';
 import Cart from './components/Cart';
