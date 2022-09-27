@@ -16,7 +16,7 @@ const ItemDetail = ({item}) => {
     };
     
     return (
-        <div className="item-detail container-fluid row col-6  text-center">
+        <div className="item-card container-fluid row col-6  text-center">
             <div className="col-7 ">
                 <h3>{item.nombre}</h3>
                 <p>{item.descripcion}</p>
