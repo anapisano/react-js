@@ -32,7 +32,7 @@ export const productos = [
     {
         id:4, 
         nombre:"Set animalitos de la puna", 
-        descripcion: "Ser x 4 animales hechos a mano",
+        descripcion: "Set x 4 animales hechos en madera a mano",
         imagen: "/img/img_producto_puna.jpeg", 
         precio:2600, 
         categoria: "madera",
