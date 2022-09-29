@@ -20,6 +20,7 @@ function App() {
             <Routes>
               <Route exact path="/cart" element={<Cart />} />
               <Route exact path="" element={<Carrousel />} />
+              <Route exact path="/productos" element={<ItemListContainer />} />
               <Route exact path="/productos/:categoria" element={<ItemListContainer />} />
               <Route exact path="/productos/:categoria/:id" element={<ItemDetailContainer />} />
             </Routes>

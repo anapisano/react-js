@@ -15,7 +15,7 @@ const Navbar = () => {
                         Productos
                     </button>
                     <ul className="dropdown-menu">
-                        <li><NavLink className="nav__link dropdown-item color_letra " to="/productos/todos">Ver todos los productos</NavLink></li>
+                        <li><NavLink className="nav__link dropdown-item color_letra " to="/productos">Ver todos los productos</NavLink></li>
                         <li><NavLink className="nav__link dropdown-item color_letra" to="/productos/tela">Productos de tela</NavLink></li>
                         <li><NavLink className="nav__link dropdown-item color_letra" to="/productos/madera">Productos de madera</NavLink></li>
                     </ul>

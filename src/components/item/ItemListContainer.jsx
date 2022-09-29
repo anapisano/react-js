@@ -11,7 +11,7 @@ const ItemListContainer = () => {
 
         const db = getFirestore();
         const itemsCollection = collection (db, "productos");
-        const queryItems = id ? query(itemsCollection, where("categoria", "==", categoria)) : itemsCollection;
+        const queryItems = categoria ? query(itemsCollection, where("categoria", "==", categoria)) : itemsCollection;
         getDocs(queryItems).then((snapShot) => {
             if (snapShot.size > 0) {
                 setData(snapShot.docs.map(item => ({id:item.id, ...item.data()})));
