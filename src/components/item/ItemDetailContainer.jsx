@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-// import  { productos } from "../arrayProductos"
 import { useParams } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
@@ -11,7 +10,7 @@ const ItemDetailContainer = () => {
 
      useEffect(() => {
         const db = getFirestore();
-        const response = doc(db, "cria-suelta", id);
+        const response = doc(db, "productos", id);
         console.log(response)
         getDoc(response).then((snapShot) => {
             console.log(snapShot)
