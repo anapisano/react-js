@@ -5,7 +5,7 @@ import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
     const [data, setData] = useState([]);
-    const {id, categoria} = useParams()
+    const {categoria} = useParams()
 
     useEffect(() =>{
 
@@ -20,19 +20,6 @@ const ItemListContainer = () => {
                 console.log('error')
             }
         });
-/*         const getProductos = new Promise ((resolve) => {
-            setTimeout (() => {
-                resolve (productos);
-            }, 1000);
-        });
-        if (categoria === "todos") {
-            getProductos.then (res => setData(res));
-            
-        }else{
-            getProductos.then (res => setData(res.filter (producto => producto.categoria === categoria)));
-            
-        } */
-        
     }, [categoria])
 
     return (

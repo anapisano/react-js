@@ -20,13 +20,6 @@ const ItemDetailContainer = () => {
             }            
         });
 
-/*         const getProducto = new Promise ((resolve) => {              
-            setTimeout (() => {
-                resolve (productos);
-            }, 1000);
-        });
-            getProducto.then (res => setProducto(res.find (prod => prod.id === parseInt(id))));
-             */
     }, [id])
 
     return(
