@@ -29,11 +29,7 @@ const ItemDetail = ({item}) => {
             </div>
             <div className="col-5 p-0 ">
                 <img src={item.imagen} className="img-fluid p-0 rounded-3"width=""/>
-            </div>
-            
-            
-            
-        
+            </div>     
         </div>
 
     )

@@ -1,7 +1,7 @@
 import React,{ useContext }  from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
-import { CartContext } from "../context/CartContext";
-import ItemCart from "./item/ItemCart";
+import { CartContext } from "../../context/CartContext";
+import ItemCart from "../item/ItemCart";
 import './cart.css';
 
 

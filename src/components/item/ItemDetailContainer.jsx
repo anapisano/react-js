@@ -16,7 +16,6 @@ const ItemDetailContainer = () => {
             console.log(snapShot)
             if (snapShot.exists()) {
                 setProducto({id:snapShot.id, ...snapShot.data()});
-            
             }            
         });
 
